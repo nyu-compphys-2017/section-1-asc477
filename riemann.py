@@ -13,4 +13,19 @@ def hello_world(name=''):
 
 hello_world()
 
+def Riemann(a,b,N):
+    delta = (b-a)/N
+    x = a + delta
+    area = 0
+    while x <= b:
+        y = x**2
+        area = area + (y*delta)
+        x = x + delta
+    print area
+
+Riemann(0,10,10000.)
+
+
+
+
 #Implement the Riemann Sum approximation for integrals.
